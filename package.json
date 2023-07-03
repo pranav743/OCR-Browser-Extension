@@ -1,0 +1,32 @@
+{
+  "name": "extractor",
+  "version": "1.0.0",
+  "description": "an ocr base image to text tool",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranav743/OCR-Browser-Extension.git"
+  },
+  "keywords": [
+    "ocr"
+  ],
+  "author": "Pranav Patil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pranav743/OCR-Browser-Extension/issues"
+  },
+  "homepage": "https://github.com/pranav743/OCR-Browser-Extension#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "tesseract.js": "^4.1.1"
+  },
+  "devDependencies": {
+    "web": "^0.0.2",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
