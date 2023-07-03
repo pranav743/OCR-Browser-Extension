@@ -3,7 +3,7 @@ const processButton = document.getElementById('process-button');
 const outputDiv = document.getElementById('output');
 
 const Tesseract = require('tesseract.js');
-// const fs = require('fs');
+const fs = require('fs');
 
 // Listen for the "paste" event on the document
 document.addEventListener('paste', handlePasteEvent);
