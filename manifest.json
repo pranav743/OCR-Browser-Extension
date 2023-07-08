@@ -3,9 +3,15 @@
     "version": "0.0.1",
     "manifest_version": 2,
     "browser_action": {
-      "default_popup": "public/index.html"
+      "default_popup": "public/index.html",
+      "default_icon": "logo.png"
     },
     "permissions": [],
+    "icons": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
     "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
   }
   

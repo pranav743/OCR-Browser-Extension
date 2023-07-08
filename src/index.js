@@ -59,14 +59,23 @@ function processImageFile(file) {
 
 // Perform OCR on the image using Tesseract.js
 function performOCR(imageElement) {
+  document.getElementById('output-div').style.display = "block";
+  outputDiv.style.display = "block";
+  outputDiv.textContent = "Please Wait...";
   Tesseract.recognize(imageElement)
     .then((result) => {
       const text = result.data.text;
-      document.getElementById('output-div').style.display = "block";
-      outputDiv.style.display = "block";
-      outputDiv.textContent = text;
+      // document.getElementById('output-div').style.display = "block";
+      // outputDiv.style.display = "block";
+
+      if (text==""){
+        outputDiv.textContent = "Cannot find text o Extract.";
+      } else{
+        outputDiv.textContent = text;
+      }
     })
     .catch((error) => {
+      outputDiv.textContent = `Error : ${error}`;
       console.error('Error performing OCR:', error);
     });
 }
